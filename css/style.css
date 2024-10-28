@@ -7,6 +7,7 @@
 } 
 
 body {
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,20 +56,25 @@ body {
 }
 
 .hero-img {
+  background-color: #e5e7eb;
   text-align: center;
+  align-content: center;
+  width: 50%;
+  height: 30%;
 }
 
 .info-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .info {
+  text-align: center;
   width: 900px;
   display: flex;
   flex-flow: wrap column;
   align-items: center;
-  text-align: center;
   gap: 32px
 }
 
@@ -91,15 +97,20 @@ body {
 .img-box img {
   width: 150px;
   height: 150px;
+  
+  border: 5px solid #3882f6;
+  border-radius: 15px;
 }
 
 .quote-container {
   display: flex;
   justify-content: center;
+  
+  background-color: #e5e7eb;
 }
 
 .quote {
-  width: 900px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +120,7 @@ body {
 
 
 .citation {
-  margin-left: auto;
+  margin: 0 16px 0 auto;
 }
 
 .cta-container {
@@ -119,7 +130,7 @@ body {
 }
 
 .cta {
-  border: 1px solid #000;
+  border-radius: 10px;
   width: 900px;
   height: 150px;
   display: flex;
@@ -130,4 +141,70 @@ body {
 .footer {
   text-align: center;
   align-content: center;
+}
+
+.header-container,
+.hero-container,
+.footer {
+  background-color: #1f2937;
+}
+
+.logo,
+.hero-heading,
+.footer,
+.signup-hero,
+.signup-cta,
+.cta-text {
+  color: #f9faf8;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.header-links,
+.hero-para {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.signup-hero,
+.signup-cta,
+.cta {
+  background-color: #3882f6;
+}
+
+.info h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  font-weight: 300;
+}
+
+
+.signup-hero,
+.signup-cta {
+  padding: 8px 40px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.signup-hero {
+  border: 2px solid #1f2937;
+}
+
+.signup-cta {
+  border: 2px solid #f9faf8;
 }
